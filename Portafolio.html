@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jorge Luis Bustos Gonzalez</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4b8b1c6e9d.js" crossorigin="anonymous"></script>
+
+<!-- ICONO PESTAÑA -->
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2103/2103633.png">
+
+<style>
+
+/* SCROLL SUAVE */
+html{
+  scroll-behavior:smooth;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#050505;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px;
+  background:rgba(0,0,0,0.9);
+  backdrop-filter:blur(8px);
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  transition:.3s;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:#ff1a1a;
+  transform:translateY(-2px);
+}
+
+/* ICONO MENU */
+.nav-icon{
+  width:18px;
+  height:18px;
+  margin-right:6px;
+}
+
+/* HEADER */
+header{
+  padding-top:120px;
+  padding-bottom:60px;
+  text-align:center;
+}
+
+/* IMAGEN PRINCIPAL */
+.hero-img{
+  display:block;
+  margin:20px auto;
+  width:60%;
+  max-width:500px;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(255,0,0,0.25);
+}
+
+/* TITULO */
+header h1{
+  font-size:3rem;
+  color:#ff1a1a;
+  margin-top:15px;
+}
+
+header p{
+  color:#aaa;
+  margin-top:8px;
+  font-size:1.1rem;
+}
+
+/* BOTON CV */
+.cv-btn{
+  margin-top:20px;
+  display:inline-block;
+  padding:12px 22px;
+  background:#ff1a1a;
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+  transition:.3s;
+  font-weight:500;
+}
+
+.cv-btn:hover{
+  background:#cc0000;
+  transform:translateY(-3px);
+  box-shadow:0 0 15px rgba(255,0,0,.4);
+}
+
+/* SECCIONES */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:90px 20px;
+  scroll-margin-top:90px;
+}
+
+h2{
+  color:#ff1a1a;
+  margin-bottom:25px;
+  text-align:center;
+  font-size:2rem;
+}
+
+/* CARDS */
+.card{
+  background:#111;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:30px;
+  transition:.3s;
+  border:1px solid #1f1f1f;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 20px rgba(255,0,0,.25);
+}
+
+/* IMAGENES PROYECTOS */
+.card img{
+  width:100%;
+  max-height:220px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#bdbdbd;
+  margin-bottom:15px;
+}
+
+.card a{
+  color:#ff4d4d;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* CONTACTO */
+.links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:20px;
+}
+
+.links a{
+  padding:12px 20px;
+  background:#111;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  transition:.3s;
+}
+
+.links a:hover{
+  background:#ff1a1a;
+  transform:translateY(-3px);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  border-top:1px solid #222;
+  color:#aaa;
+  margin-top:40px;
+}
+
+footer i{
+  color:#ff1a1a;
+  margin-right:6px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  nav{
+    gap:15px;
+    font-size:14px;
+    flex-wrap:wrap;
+  }
+
+  .hero-img{
+    width:90%;
+  }
+
+  header h1{
+    font-size:2rem;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<a href="#inicio">
+<img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" class="nav-icon">
+Inicio
+</a>
+
+<a href="#sobre">Sobre mí</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+<header id="inicio">
+
+<img src="ciencia-de-datos.png" class="hero-img">
+
+<h1>Jorge Luis Bustos Gonzalez</h1>
+
+<p>Ingeniería Matemática | Data Science</p>
+
+<!-- 🔥 LINK CV CORREGIDO -->
+<a href="Jorge_Bustos_Gonzalez_CV.pdf" target="_blank" class="cv-btn">
+📄 Ver CV
+</a>
+
+</header>
+
+<section id="sobre">
+
+<h2>Sobre mí</h2>
+
+<div class="card">
+
+<p>
+Soy estudiante de Ingeniería Matemática en la Escuela Superior de Física y Matemáticas,
+con certificación en Ciencia de Datos por TripleTen.
+Tengo experiencia en análisis de datos,
+visualización y desarrollo con Python.
+</p>
+
+</div>
+
+</section>
+
+<section id="proyectos">
+
+<h2>Proyectos</h2>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+
+<h3>Aplicación de análisis de datos</h3>
+
+<p>
+EDA, limpieza y visualización de datos.
+</p>
+
+<a href="https://github.com/ioribofo12-prog/tripleten" target="_blank">
+Ver proyecto
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+
+<h3>Web Scraping</h3>
+
+<p>
+Extracción automatizada de datos desde páginas web.
+</p>
+
+<a href="https://github.com/ioribofo12-prog" target="_blank">
+Ver proyecto
+</a>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<div class="links">
+
+<a href="mailto:iori.bofo12@gmail.com">
+<i class="fas fa-envelope"></i> Email
+</a>
+
+<a href="https://github.com/ioribofo12-prog" target="_blank">
+<i class="fab fa-github"></i> GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/jorge-bustos-gonzalez-323451405/" target="_blank">
+<i class="fab fa-linkedin"></i> LinkedIn
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+<i class="fas fa-chart-line"></i>
+© 2026 Jorge Luis Bustos Gonzalez
+</p>
+
+</footer>
+
+</body>
+</html>
